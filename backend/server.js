@@ -8,9 +8,9 @@ app.use(express.json());
 app.use(cors());
 //create database connection
 const db = mysql.createConnection({
-  host: 'http://127.0.0.1:3000/',
-  user: "NewSourcesu@localhost",
-  password: "015078$PmTP%nSo]zsZ",
+  host: '127.0.0.1',
+  user: "vScopeUserName",
+  password: "password",
   database: "NewSourcesdb",
 });
 
@@ -287,6 +287,6 @@ app.post("/finanical", (req, res) => {
     };
 });
 
-app.listen(3000, '127.0.0.1', () => {
-  console.log("Server running successfully on 3000");
+app.listen(3002, '127.0.0.1', () => {
+  console.log("Server running successfully on 3002");
 });

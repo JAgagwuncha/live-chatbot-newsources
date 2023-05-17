@@ -39,7 +39,7 @@ class Demo_post extends Component {
       }
     }
     axios
-      .post("http://localhost:8080/demo", {
+      .post("http://localhost:3002/demo", {
         name: user[0].value,
         gender: user[1].value,
         age: user[2].value,
@@ -91,7 +91,6 @@ class Demo_post extends Component {
       explain_move,
       ni_number,
     ];
-    console.log(explain_move.value, "this is the value");
     this.register(demo_data);
 
     this.setState({
@@ -109,7 +108,6 @@ class Demo_post extends Component {
       explain_move,
       ni_number,
     });
-    console.log("its going here");
   }
 
   render() {
@@ -174,7 +172,7 @@ class BehaviorPost extends Component {
     }
 
     axios
-      .post("http://localhost:8080/behavior", {
+      .post("http://localhost:3002/behavior", {
         name: user[0].value,
         pet_owner: user[1].value,
         type_pet: user[2].value,
@@ -243,11 +241,9 @@ class BehaviorPost extends Component {
     ];
     for (var i = 0; i < behaviour_data.length; i++) {
       if (i.value === undefined) {
-        console.log("its blank");
         this.setState({ value: "someothername" });
       }
     }
-    // console.log(behaviour_data);
     this.register(behaviour_data);
 
     this.setState({
@@ -270,7 +266,6 @@ class BehaviorPost extends Component {
       news_mental_health_impact,
       news_mental_health_impact_how,
     });
-    console.log("its going here");
   }
 
   render() {
@@ -324,7 +319,7 @@ class FamilyPost extends Component {
     }
 
     axios
-      .post("http://localhost:8080/family", {
+      .post("http://localhost:3002/family", {
         name: user[0].value,
         sibling_y_n: user[1].value,
         like_siblings: user[2].value,
@@ -360,11 +355,9 @@ class FamilyPost extends Component {
     ];
     for (var i = 0; i < family_data.length; i++) {
       if (i.value === undefined) {
-        console.log("its blank");
         this.setState({ value: "someothername" });
       }
     }
-    // console.log(family_data);
     this.register(family_data);
 
     this.setState({
@@ -376,7 +369,6 @@ class FamilyPost extends Component {
       conflict_mental_health_y_n,
       conflict_mental_how,
     });
-    console.log("its going here");
   }
 
   render() {
@@ -440,7 +432,7 @@ class Health1Post extends Component {
       }
   
       axios
-        .post("http://localhost:8080/health_1", {
+        .post("http://localhost:3002/health_1", {
           username: user[0].value,
           anxious_y_n: user[1].value,
           anxiety_triggers: user[2].value,
@@ -505,11 +497,9 @@ class Health1Post extends Component {
       ];
       for (var i = 0; i < health1_data.length; i++) {
         if (i.value === undefined) {
-          console.log("its blank");
           this.setState({ value: "someothername" });
         }
       }
-      // console.log(health1_data);
       this.register(health1_data);
   
       this.setState({
@@ -531,7 +521,6 @@ class Health1Post extends Component {
         disability_who_diag,
         disability_daily_impact,
       });
-      console.log("its going here");
     }
   
     render() {
@@ -593,7 +582,7 @@ class Health1Post extends Component {
       }
   
       axios
-        .post("http://localhost:8080/health_2", {
+        .post("http://localhost:3002/health_2", {
           username: user[0].value,
           catch_covid_y_n: user[1].value,
           fully_recovered_y_n: user[2].value,
@@ -653,11 +642,9 @@ class Health1Post extends Component {
       ];
       for (var i = 0; i < health2_data.length; i++) {
         if (i.value === undefined) {
-          console.log("its blank");
           this.setState({ value: "someothername" });
         }
       }
-      // console.log(health2_data);
       this.register(health2_data);
   
       this.setState({
@@ -677,7 +664,6 @@ class Health1Post extends Component {
         drugs_seeking_help_y_n,
         drugs_impact_life,
       });
-      console.log("its going here");
     }
   
     render() {
@@ -735,7 +721,7 @@ class Health1Post extends Component {
       }
   
       axios
-        .post("http://localhost:8080/finanical", {
+        .post("http://localhost:3002/finanical", {
           name: user[0].value,
           annual_inc: user[1].value,
           inc_enough_y_n: user[2].value,
@@ -780,11 +766,9 @@ class Health1Post extends Component {
       ];
       for (var i = 0; i < finanical_data.length; i++) {
         if (i.value === undefined) {
-          console.log("its blank");
           this.setState({ value: "someothername" });
         }
       }
-      // console.log(finanical_data);
       this.register(finanical_data);
   
       this.setState({
@@ -799,7 +783,6 @@ class Health1Post extends Component {
         seeking_help_improved_mental_health_y_n,
         seeking_help_improved_mental_health_how,
       });
-      console.log("its going here");
     }
   
     render() {
