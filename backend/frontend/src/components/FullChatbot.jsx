@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import ChatBot from "react-simple-chatbot";
 import axios from "axios";
 
-class Demo_post extends Component {
+class demo_post extends Component {
   state = {
     tester: ["name", "not"],
   };
@@ -121,15 +121,15 @@ class Demo_post extends Component {
   }
 }
 
-Demo_post.propTypes = {
+demo_post.propTypes = {
   steps: PropTypes.object,
 };
 
-Demo_post.defaultProps = {
+demo_post.defaultProps = {
   steps: undefined,
 };
 
-class BehaviorPost extends Component {
+class behavior_post extends Component {
   state = {
     tester: ["name", "not"],
   };
@@ -279,15 +279,15 @@ class BehaviorPost extends Component {
   }
 }
 
-BehaviorPost.propTypes = {
+behavior_post.propTypes = {
   steps: PropTypes.object,
 };
 
-BehaviorPost.defaultProps = {
+behavior_post.defaultProps = {
   steps: undefined,
 };
 
-class FamilyPost extends Component {
+class family_post extends Component {
   state = {
     tester: ["name", "not"],
   };
@@ -382,15 +382,15 @@ class FamilyPost extends Component {
   }
 }
 
-FamilyPost.propTypes = {
+family_post.propTypes = {
   steps: PropTypes.object,
 };
 
-FamilyPost.defaultProps = {
+family_post.defaultProps = {
   steps: undefined,
 };
 
-class Health1Post extends Component {
+class health_1_post extends Component {
     state = {
       tester: ["name", "not"],
     };
@@ -534,15 +534,15 @@ class Health1Post extends Component {
     }
   }
   
-  Health1Post.propTypes = {
+  health_1_post.propTypes = {
     steps: PropTypes.object,
   };
   
-  Health1Post.defaultProps = {
+  health_1_post.defaultProps = {
     steps: undefined,
   };
 
-  class Health2Post extends Component {
+  class health_2_post extends Component {
     state = {
       tester: ["name", "not"],
     };
@@ -677,16 +677,16 @@ class Health1Post extends Component {
     }
   }
   
-  Health2Post.propTypes = {
+  health_2_post.propTypes = {
     steps: PropTypes.object,
   };
   
-  Health2Post.defaultProps = {
+  health_2_post.defaultProps = {
     steps: undefined,
   };
   
 
-  class FinancialPost extends Component {
+  class financial_post extends Component {
     state = {
       tester: ["name", "not"],
     };
@@ -796,11 +796,11 @@ class Health1Post extends Component {
     }
   }
   
-  FinancialPost.propTypes = {
+  financial_post.propTypes = {
     steps: PropTypes.object,
   };
   
-  FinancialPost.defaultProps = {
+  financial_post.defaultProps = {
     steps: undefined,
   };
   
@@ -1044,7 +1044,7 @@ class FullChatbot extends Component {
           },
           {
             id: "demo_post",
-            component: <Demo_post />,
+            component: <demo_post />,
             asMessage: true,
             end: false,
             trigger: "17",
@@ -1317,7 +1317,7 @@ class FullChatbot extends Component {
           },
           {
             id: "behaviour_post",
-            component: <BehaviorPost />,
+            component: <behavior_post />,
             asMessage: true,
             end: false,
             trigger: "34",
@@ -1415,7 +1415,7 @@ class FullChatbot extends Component {
           },
           {
             id: "family_post",
-            component: <FamilyPost />,
+            component: <family_post />,
             asMessage: true,
             end: false,
             trigger:"40"
@@ -1695,7 +1695,7 @@ class FullChatbot extends Component {
           },
           {
             id: "health1_post",
-            component: <Health1Post />,
+            component: <health_1_post />,
             asMessage: true,
             end: false,
             trigger:"57",
@@ -1943,7 +1943,7 @@ class FullChatbot extends Component {
 
           {
             id: "health2_post",
-            component: <Health2Post />,
+            component: <health_2_post />,
             asMessage: true,
             end: false,
             trigger:"71"
@@ -2106,7 +2106,7 @@ class FullChatbot extends Component {
           },
           {
             id: "financial_post",
-            component: <FinancialPost />,
+            component: <financial_post />,
             asMessage: true,
             end: true,
           },
