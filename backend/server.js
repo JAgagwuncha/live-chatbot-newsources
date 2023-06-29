@@ -6,6 +6,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors());
+
 //create database connection
 const db = mysql.createConnection({
   host: '127.0.0.1',
@@ -19,6 +20,10 @@ db.connect((err) => {
   if (err) throw err;
   console.log("Mysql Connected...");
 });
+
+app.get('/', (req, res) => {
+  res.send("GET Request Called")
+})
 
 app.post("/demo", (req, res) => {
   const username = req.body.name;
@@ -287,6 +292,9 @@ app.post("/finanical", (req, res) => {
     };
 });
 
-app.listen(3002, '127.0.0.1', () => {
-  console.log("Server running successfully on 3002");
+var listener = app.listen(3003, '127.0.0.1', () => {
+  var host = listener.address().address;
+  var port = listener.address().port;
+  console.log('running at http://' + host + ':' + port);
+  console.log("Server running successfully on 3003");
 });

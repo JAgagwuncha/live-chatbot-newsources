@@ -39,9 +39,14 @@ class BehaviorPost extends Component {
         }
     console.log(user)
     }
+    axios.defaults.baseURL = 'http://localhost:3003';
+
+    axios.get('http://127.0.0.1:3003').then(resp => {
+    console.log(resp.data);
+});
 
     axios
-      .post("http://127.0.0.1:3000/behavior", {
+      .post("http://127.0.0.1:3003/behavior", {
         name: user[0].value,
         pet_owner: user[1].value,
         type_pet: user[2].value,
